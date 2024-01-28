@@ -293,6 +293,7 @@ $("#nameSearch").on("input", () => searchByName($("#nameSearch").val()));
 $("#letterSearch").on("input", () => searchByLetter($("#letterSearch").val()));
 
 async function searchByName(input) {
+  $("#main-body .row").empty();
   $(".second-loading-screen").fadeIn(300);
   let res = await fetch(
     `https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`
@@ -305,6 +306,7 @@ async function searchByName(input) {
 }
 
 async function searchByLetter(input) {
+  $("#main-body .row").empty();
   $(".second-loading-screen").fadeIn(300);
   let res = await fetch(
     `https://www.themealdb.com/api/json/v1/1/search.php?f=${input}`
