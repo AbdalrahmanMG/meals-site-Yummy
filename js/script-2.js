@@ -161,12 +161,14 @@ function displayCategoryItem(categories) {
                               }')">
                                    <img src="${category.strCategoryThumb}">
                                  <div class="catg__item-layer">
-                                  <h3>${category.strCategory}</h3>
-                                  <p class="text-center">${category.strCategoryDescription
-                                    .split(" ")
-                                    .slice(0, 15)
-                                    .join(" ")}</p>
-                                 </div>
+                                    <div class="m-2">
+                                    <h4>${category.strCategory}</h4>
+                                    <p class="text-center">${category.strCategoryDescription
+                                      .split(" ")
+                                      .slice(0, 10)
+                                      .join(" ")}</p>
+                                   </div>
+                                    </div>
                               </div>
                           </div>`;
     $("#main-body .row").append(blackbox);

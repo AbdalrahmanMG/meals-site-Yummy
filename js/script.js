@@ -148,7 +148,7 @@ function displayCategoryItem(categories) {
                                   <h3>${category.strCategory}</h3>
                                   <p class="text-center">${category.strCategoryDescription
                                     .split(" ")
-                                    .slice(0, 15)
+                                    .slice(0, 10)
                                     .join(" ")}</p>
                                  </div>
                               </div>
