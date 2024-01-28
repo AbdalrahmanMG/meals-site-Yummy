@@ -58,7 +58,7 @@ function showAndHide() {
 function displayMeal(meals) {
   let blackbox = "";
   meals.forEach((meal) => {
-    blackbox = `<div class="main-inner g-3">
+    blackbox = `<div class="main-inner col-lg-3 col-md-6 g-3">
                                 <div class="catg__item" onclick="filterOnemeal('${meal.idMeal}')">
                                      <img src="${meal.strMealThumb}">
                                    <div class="catg__item-layer">
@@ -139,7 +139,7 @@ async function getAllCategories() {
 
 function displayCategoryItem(categories) {
   categories.forEach((category) => {
-    let blackbox = `<div class="main-inner g-3">
+    let blackbox = `<div class="main-inner col-md-6 col-lg-3 g-3">
                               <div class="catg__item" onclick="filterCountryOrCategory('c','${
                                 category.strCategory
                               }')">
