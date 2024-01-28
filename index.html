@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <!-- <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel=" stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- start of nav section -->
+    <section class="position-fixed top-0 start-0 d-flex nav-side">
+        <nav id="nav" class=" hidden">
+            <ul class=" list-unstyled overflow-hidden ">
+                <li class="hidden"><a class="search">Search</a></li>
+                <li class="hidden"><a class="categories">Categories</a></li>
+                <li class="hidden"><a class="area">Area</a></li>
+                <li class="hidden"><a class="ingredients">Ingredients</a></li>
+                <li class="hidden"><a class="contact">Contact Us</a></li>
+            </ul>
+            <div class="nav__copyrights text-white ">
+                <div class="nav__copyrights-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p>Copyright @Abdalrahman M. Gomaa 2024 All Rights Reserved.</p>
+            </div>
+        </nav>
+        <div class="collapse__btn bg-white px-2 ">
+            <img src="./logo.png" alt="Yummy logo">
+            <button class="bg-transparent border-0 navBtn">
+                <i class="fa-solid fa-bars open fs-2"></i>
+                <i class="fa-solid fa-xmark hidden close fs-2"></i></button>
+            <div class="collapse__btn-icons d-flex flex-column align-items-center">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </section>
+    <!-- end of nav section -->
+
+    <!--start of search section -->
+    <section id="search" class="py-4 hidden">
+        <div class="container">
+            <form>
+                <div class="row row-cols-md-2">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="nameSearch" placeholder="Search By Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="letterSearch" maxlength="1"
+                            placeholder="Search By First Letter">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--end of search section -->
+
+    <!-- loading screen -->
+    <div class="loading-screen">
+        <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+
+    <div class="second-loading-screen">
+        <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+    <!-- end loading screen -->
+
+    <!-- start main body section -->
+    <section id="main-body" class="py-5 hidden">
+        <div class="container">
+            <div class="row row-cols-md-4"></div>
+        </div>
+    </section>
+    <!-- end main body section -->
+
+    <!-- start details section -->
+    <section id="details" class="py-5 hidden">
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </section>
+    <!-- start details section -->
+
+    <!-- start contact section -->
+    <section id="contact" class="hidden">
+        <div class="container">
+            <form>
+                <div class="row row-cols-md-2 p-5">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+                        <p class="errMsg text-center text-white hidden">Special characters and numbers not allowed</p>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                        <p class="errMsg text-center text-white hidden">Email not valid *exemple@yyy.zzz</p>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="phone" placeholder="Enter Your Phone">
+                        <p class="errMsg text-center text-white hidden">Enter valid Phone Number</p>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="age" placeholder="Enter Your Age">
+                        <p class="errMsg text-center text-white hidden">Enter valid age</p>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+                        <p class="errMsg text-center text-white hidden">Enter valid password *Minimum eight characters,
+                            at
+                            least one
+                            letter and one number:*</p>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="repassword" placeholder="Repassword">
+                        <p class="errMsg text-center text-white hidden">Enter valid repassword</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"> <a
+                        class="subBtn btn btn-outline-dark">Submit</a>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <!-- end contact section -->
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
