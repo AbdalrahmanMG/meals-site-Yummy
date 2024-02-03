@@ -99,7 +99,7 @@ function displayArea(meals) {
   let blackbox = "";
   meals.forEach((meal) => {
     blackbox = `
-           <div class="main-inner">
+           <div class="main-inner col-md-6 col-lg-3 g-3">
                <div class="solid__item" onclick="filterCountryOrCategory('a','${meal.strArea}')">
                   <i class="fa-solid fa-house"></i>
                   <h3>${meal.strArea}</h3>
@@ -206,7 +206,7 @@ function displayingredientItem(ingredients) {
   let blackbox = 0;
   ingredients.forEach((ingredient) => {
     blackbox = `
-           <div class="main-inner">
+           <div class="main-inner col-md-6 col-lg-3 g-3">
                <div class="solid__item" onclick="filterCountryOrCategory('i','${
                  ingredient.strIngredient
                }')">
